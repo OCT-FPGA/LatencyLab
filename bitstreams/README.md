@@ -15,8 +15,7 @@ down as pointer files.
 Each program bitstream was built from the P4 source referenced in
 [`../p4/README.md`](../p4/README.md), on top of the Open-NIC-Shell platform
 (QDMA subsystem, CMAC subsystem, two physical functions). Open-NIC-Shell
-itself is not vendored in this repo — see the upstream project for the base
-shell source.
-
+itself is not vendored in this repo — the base platform lives at
+https://github.com/OCT-FPGA/P4OpenNIC_Public
 
 To flash a bitstream onto the AU280, see [`../receiver/README.md`](../receiver/README.md).
