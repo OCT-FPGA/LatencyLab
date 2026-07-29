@@ -25,7 +25,8 @@ running Open-NIC-Shell.
 
 ## Testbed
 
-Two nodes on the Open Cloud Testbed (OCT):
+Two nodes on the Open Cloud Testbed (OCT), using the CloudLab profile:
+https://www.cloudlab.us/show-profile.php?uuid=f9577a58-4186-11ee-9f39-e4434b2381fc
 
 - **Receiver node** — hosts the AU280 FPGA SmartNIC; runs the DPDK
   receiver/reflector (see `receiver/README.md`).
@@ -39,7 +40,10 @@ Two nodes on the Open Cloud Testbed (OCT):
 2. **Run a measurement campaign** — see [`receiver/README.md`](receiver/README.md)
    and [`sender/README.md`](sender/README.md). The two sides run in
    coordination: the sender waits for a per-session ready signal from the
-   receiver before capturing.
+   receiver before capturing. Note that some hardware-specific values
+   (PCIe addresses, interface names, MAC addresses) are testbed-specific
+   and must be adjusted on new hardware — see the "Configuration required"
+   section in `receiver/README.md`.
 3. **Resulting data** lands under `data/` — see [`data/README.md`](data/README.md)
    for the exact layout and file formats.
 
