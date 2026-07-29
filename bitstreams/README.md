@@ -18,7 +18,5 @@ Each program bitstream was built from the P4 source referenced in
 itself is not vendored in this repo — see the upstream project for the base
 shell source.
 
-**TODO:** record the exact Open-NIC-Shell commit/tag this was built against,
-for full rebuild reproducibility.
 
 To flash a bitstream onto the AU280, see [`../receiver/README.md`](../receiver/README.md).
