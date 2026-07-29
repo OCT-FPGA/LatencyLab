@@ -1,0 +1,13 @@
+# secrets
+private_key.pem
+
+# compiled binaries (rebuild via Makefile)
+receiver/p4lat
+receiver/p4lat_r2
+
+# python
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
