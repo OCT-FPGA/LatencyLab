@@ -25,6 +25,8 @@ flashes bitstreams and drives measurement sessions on the FPGA host.
 
 ## Dependencies (not vendored in this repo)
 
+See [`SETUP.md`](SETUP.md) for the full from-scratch bring-up (kernel prep, DPDK build, "the dance").
+
 - DPDK 20.11
 - Xilinx DMA IP drivers, NICs bound to `vfio-pci`
 - Xilinx Runtime (XRT) — provides `config-fpga` and `xbflash2`, used by
