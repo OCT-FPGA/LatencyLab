@@ -174,10 +174,10 @@ def main():
     time.sleep(10)
     print("ONIC driver reloaded.", flush=True)
 
-    print("Bringing interfaces up (enp59s0f0, enp59s0f1)...", flush=True)
+    print("Bringing interfaces up (enp135s0f0, enp135s0f1)...", flush=True)
     # 5) bring interfaces up
-    bring_iface_up(sudo, "enp59s0f0")
-    bring_iface_up(sudo, "enp59s0f1")
+    bring_iface_up(sudo, "enp135s0f0")
+    bring_iface_up(sudo, "enp135s0f1")
     time.sleep(2)
     print("Interfaces up.", flush=True)
 
