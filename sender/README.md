@@ -30,6 +30,17 @@ that turns those captures into latency numbers.
 - ConnectX-5 (or equivalent hardware-timestamping NIC) with `PTP`/`HWTSTAMP`
   support enabled
 
+## Configuration required on new hardware
+
+- ConnectX-5 interface name — set in `campaign162.sh` (`MAC=$(ip link show
+  enp134s0np0 ...)` and the `tcpdump -i` argument), currently `enp134s0np0`.
+  Find yours with `ip link` on this node.
+- The receiver's `p4lat_r2 --dst-mac` argument must match this node's
+  ConnectX-5 MAC address — get it with `ip link show <your interface>`.
+- The token-handshake port (`nc -l 9999` in `campaign162.sh`) assumes the
+  two nodes can reach each other directly on that port; adjust firewall
+  rules if needed on new hardware.
+
 ## Output
 
 `refl_*.pcap` → [`../data/pcap/reflected/`](../data/pcap/reflected/)
