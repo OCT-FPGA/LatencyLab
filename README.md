@@ -21,6 +21,7 @@ running Open-NIC-Shell.
 | `bitstreams/` | Compiled FPGA bitstreams, `.mcs` (Git LFS)                       |
 | `receiver/`   | DPDK measurement engine + automation — runs on the FPGA host     |
 | `sender/`     | Traffic generation + hardware-clock capture/analysis — sender    |
+| `emulator/`   | Vendor worst-case latency model (VitisNetP4 calculated latency + insertion penalty) |
 | `data/`       | Raw and processed measurement data (`tsc/`, `pcap/`, `silicon/`) |
 
 ## Testbed
